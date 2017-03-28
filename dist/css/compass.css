@@ -1,0 +1,1444 @@
+.compass-debug {
+    margin-top: 10px;
+}
+.compass-debug button {
+    font-size: 10px !important;
+    width: 85px !important;
+    height: 23px !important;
+    background: #eee !important;
+    color: #000 !important;
+    border: none !important;
+    margin: 0 auto !important;
+    margin-right: 10px !important;
+}
+.compass-debug .random {
+    margin-left: 20px;
+}
+.compass-debug .compass-debug-inner {
+    width: 540px;
+    height: 0px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #fff;
+    color: #000;
+    overflow: hidden;
+    transition: height 300ms;
+}
+.compass-debug .compass-debug-inner .weight {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 100%;
+    text-align: left;
+    font-style: normal;
+}
+.compass-debug .compass-debug-inner .weight input.value {
+    margin: 0 10px;
+    width: 50px;
+    border: 1px solid #000;
+    padding: 5px;
+    position: relative;
+    top: -2px;
+    text-align: center;
+}
+.compass-debug .compass-debug-inner .weight .simplebutton {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -2px;
+}
+.compass-debug .compass-debug-inner .weight .simplebutton:first-child {
+    margin-left: 15px;
+}
+.compass-debug .compass-debug-inner ul {
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.compass-debug .compass-debug-inner ul li {
+    text-align: left;
+    font-size: 11px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.compass-debug .compass-debug-inner ul li p {
+    text-align: left;
+    padding: 0;
+    width: 500px;
+    font-style: normal;
+}
+.compass-debug .compass-debug-inner ul li p small {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.compass-debug .compass-debug-inner ul li p span {
+    font-weight: normal;
+    font-size: 11px;
+    padding: 2px 4px;
+    background: #eee;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.compass-debug.active .compass-debug-inner {
+    height: 850px;
+}
+.compass {
+    width: 560px;
+    height: 560px;
+    background: #e6e1dc;
+    padding: 30px;
+    position: relative;
+}
+.compass .axis-x {
+    position: absolute;
+    top: 50%;
+    width: 560px;
+    height: 1px;
+    background: #bc3d3f;
+}
+.compass .axis-y {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 560px;
+    background: #bc3d3f;
+}
+.compass .axis-label {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #bc3d3f;
+}
+.compass .axis-label.top {
+    top: 7px;
+    left: 0px;
+}
+.compass .axis-label.bottom {
+    bottom: 8px;
+    left: 0px;
+}
+.compass .axis-label.left {
+    left: 2px;
+    top: 0px;
+    width: 30px;
+    height: 100%;
+}
+.compass .axis-label.left span {
+    transform: rotate(-90deg);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    margin-top: -9px;
+}
+.compass .axis-label.right {
+    right: 4px;
+    top: 0px;
+    width: 30px;
+    height: 100%;
+}
+.compass .axis-label.right span {
+    transform: rotate(-90deg);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    margin-top: -9px;
+}
+.compass table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 560px;
+}
+.compass table tr {
+    height: 40px;
+}
+.compass table tr td {
+    border: 1px solid #c8c8c8;
+    width: 39px;
+    height: 39px;
+    word-wrap: break-word;
+}
+.compass .pins {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 560px;
+    height: 560px;
+    padding: 30px;
+    z-index: 10;
+}
+.compass .pins .compass__pin {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.compass .userpin {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-left: 50%;
+    margin-top: calc(50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: #eb3437;
+    border-radius: 100%;
+    z-index: 0;
+}
+@media (max-width: 667px) {
+    .compass {
+        width: 290px;
+        height: 290px;
+        padding: 15px;
+    }
+    .compass .pins {
+        padding: 15px;
+    }
+    .compass .axis-x {
+        width: 290px;
+        margin-top: -1px;
+    }
+    .compass .axis-y {
+        height: 290px;
+        margin-left: 0px;
+    }
+    .compass .axis-label {
+        font-size: 11px;
+    }
+    .compass .axis-label.top {
+        top: 0;
+    }
+    .compass .axis-label.right {
+        right: -1px;
+    }
+    .compass .axis-label.left {
+        left: -3px;
+    }
+    .compass .axis-label.bottom {
+        bottom: 2px;
+    }
+    .compass table {
+        width: 290px;
+    }
+    .compass table tr {
+        height: 21px;
+    }
+    .compass table tr td {
+        width: 21px;
+        height: 23px;
+    }
+    .compass .pins {
+        width: 290px;
+        height: 290px;
+    }
+    .compass .userpin {
+        width: 14px;
+        height: 14px;
+    }
+}
+.hoverable {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.hoverable:hover {
+    opacity: 0.7;
+}
+.compass__pin.closest.bg {
+    background: #abc7c6;
+}
+.compass__pin:hover {
+    cursor: pointer;
+}
+.compass__pin.bg {
+    background-color: #cdc3b5;
+    color: #cdc3b5;
+    z-index: 2 !important;
+    opacity: 0.5;
+}
+.compass__pin.hover.bg {
+    opacity: 1;
+}
+.compass__pin.title {
+    padding: 2px 7px;
+    background-color: none;
+    color: #1a1a1a;
+    position: relative;
+    top: 3px;
+    z-index: 2;
+    transition: top 300ms;
+    font-size: 15px;
+    font-family: "Lava 3", "Lava Pro", serif;
+    z-index: 5;
+    text-align: center;
+}
+.compass__pin.title.pins-9 {
+    left: 221px;
+    top: -211px;
+}
+.compass__pin.title.pins-7 {
+    left: 245px;
+    top: -114px;
+    padding: 2px 10px;
+}
+.compass__pin.title.pins-1 {
+    left: 49px;
+    top: -50px;
+}
+.compass__pin.title.pins-0 {
+    top: 20px;
+    left: -210px;
+}
+.compass__pin.title.pins-6 {
+    width: 47px;
+    left: -249px;
+    top: 104px;
+}
+.compass__pin.title.pins-8 {
+    top: 189px;
+    left: -184px;
+}
+.compass__pin.title.pins-3 {
+    top: 124px;
+    width: 154px;
+    left: -60px;
+}
+.compass__pin.title.pins-4 {
+    top: 60px;
+    left: -87px;
+}
+.compass__pin.title.pins-5 {
+    top: 23px;
+    left: 51px;
+}
+.compass__pin.title.pins-2 {
+    top: -20px;
+    left: -105px;
+}
+.compass__pin.line {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 15px;
+    height: 20px;
+    margin-left: -1px;
+    z-index: 1;
+}
+.compass__pin.line.pins-7 {
+    left: 243px;
+}
+.compass__pin.line.pins-3 {
+    left: -60px !important;
+    top: 93px !important;
+}
+.compass__pin.line.pins-3 .l {
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1a1a1a;
+}
+.compass__pin.line.pins-2 {
+    top: 2px !important;
+    left: -45px !important;
+}
+.compass__pin.line.pins-2 .l {
+    height: 30px;
+}
+.compass__pin.line.pins-8 {
+    top: 170px !important;
+    height: 25px;
+}
+.compass__pin.line.pins-4 {
+    top: 39px !important;
+}
+.compass__pin.line.pins-6 {
+    width: 20px;
+    left: -219px !important;
+    top: 104px !important;
+}
+.compass__pin.line.pins-6 .l {
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1a1a1a;
+}
+.compass__pin.line.pins-5 {
+    width: 20px;
+    left: -25px !important;
+    top: 23px !important;
+}
+.compass__pin.line.pins-5 .l {
+    width: 19px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1a1a1a;
+}
+.compass__pin.line .l {
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+}
+.compass__pin.line.pins-3 {
+    left: 60px;
+}
+.compass__pin.line.pins-9 {
+    left: 259px;
+}
+.compass__pin.line.pins-5 {
+    left: -27px;
+}
+.compass__pin.line.pins-1 {
+    height: 15px;
+}
+.compass__pin.line.pins-0 {
+    height: 10px;
+}
+.compass__pin.dot {
+    position: absolute;
+    z-index: 5;
+    margin-left: 50%;
+    margin-top: calc(50% - 7px) !important;
+}
+.compass__pin.dot.pins-8 {
+    left: -182px;
+}
+.compass__pin.dot .outer_circle {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #1a1a1a;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 0px #1a1a1a;
+}
+.compass__pin.dot .inner_circle {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -3px;
+    width: 5px;
+    height: 5px;
+    background: #e5e0d6;
+    border-radius: 100%;
+    z-index: 2;
+}
+@media (max-width: 667px) {
+    .compass__pin.title {
+        font-size: 11px;
+        padding: 0px 2px;
+    }
+    .compass__pin.title.pins-9 {
+        left: 103px;
+        top: -119px;
+    }
+    .compass__pin.title.pins-7 {
+        left: 122px;
+        top: -68px;
+        padding: 0px 2px;
+    }
+    .compass__pin.title.pins-1 {
+        left: 27px;
+        top: -36px;
+    }
+    .compass__pin.title.pins-0 {
+        top: 9px;
+        left: -110px;
+    }
+    .compass__pin.title.pins-6 {
+        width: auto;
+        left: -116px;
+        top: 39px;
+    }
+    .compass__pin.title.pins-8 {
+        top: 95px;
+        left: -97px;
+    }
+    .compass__pin.title.pins-3 {
+        top: 49px;
+        width: auto;
+        left: 29px;
+    }
+    .compass__pin.title.pins-4 {
+        top: 31px;
+        left: -47px;
+    }
+    .compass__pin.title.pins-5 {
+        top: 12px;
+        left: 26px;
+    }
+    .compass__pin.title.pins-2 {
+        top: -12px;
+        left: -51px;
+    }
+    .compass__pin.line.pins-0 {
+        top: 26px !important;
+        height: 20px;
+    }
+    .compass__pin.line.pins-0 .l {
+        height: 10px;
+    }
+    .compass__pin.line.pins-1 {
+        left: 25px !important;
+        top: -22px !important;
+    }
+    .compass__pin.line.pins-3 {
+        left: -27px !important;
+        top: 49px !important;
+    }
+    .compass__pin.line.pins-3 .l {
+        width: 9px;
+        height: 1px;
+    }
+    .compass__pin.line.pins-2 {
+        left: -24px !important;
+        top: 5px !important;
+    }
+    .compass__pin.line.pins-2 .l {
+        height: 10px;
+    }
+    .compass__pin.line.pins-8 {
+        left: -96px !important;
+        top: 70px !important;
+    }
+    .compass__pin.line.pins-8 .l {
+        top: 20px;
+        height: 10px;
+    }
+    .compass__pin.line.pins-4 {
+        left: -47px;
+        top: 28px !important;
+    }
+    .compass__pin.line.pins-4 .l {
+        height: 6px;
+    }
+    .compass__pin.line.pins-6 {
+        width: 20px;
+        left: -104px !important;
+        top: 48px !important;
+    }
+    .compass__pin.line.pins-6 .l {
+        width: 1px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #1a1a1a;
+    }
+    .compass__pin.line.pins-5 {
+        width: 10px !important;
+        left: -10px !important;
+        top: 12px !important;
+    }
+    .compass__pin.line.pins-5 .l {
+        width: 7px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #1a1a1a;
+    }
+    .compass__pin.line .l {
+        width: 1px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #000;
+    }
+    .compass__pin.line.pins-3 {
+        left: 60px;
+    }
+    .compass__pin.line.pins-9 {
+        left: 135px !important;
+        top: -102px !important;
+    }
+    .compass__pin.line.pins-5 {
+        left: -27px;
+    }
+    .compass__pin.line.pins-7 {
+        left: 127px !important;
+        top: -51px !important;
+    }
+    .compass__pin.dot {
+        margin-top: calc(50% - 4px) !important;
+    }
+    .compass__pin.dot.pins-3 {
+        left: -31px;
+        top: 48px !important;
+    }
+    .compass__pin.dot .outer_circle {
+        width: 9px;
+        height: 9px;
+        margin-left: -5px;
+        top: 0px;
+    }
+    .compass__pin.dot .inner_circle {
+        width: 3px;
+        height: 3px;
+        margin-left: -2px;
+        top: 3px;
+    }
+}
+.hoverable {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.hoverable:hover {
+    opacity: 0.7;
+}
+.radio-button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 78px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.radio-button .outer__circle {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #1a1a1a;
+    border-radius: 100%;
+    transition: border-color 300ms, background 300ms;
+}
+.radio-button .inner__circle {
+    transition: transform 300ms;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    background: #1a1a1a;
+    border-radius: 100%;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+}
+.radio-button.active .inner__circle {
+    transform: scale(1);
+}
+.radio-button .label {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #4c4c4c;
+    transition: color 300ms;
+}
+@media (max-width: 667px) {
+    .radio-button .label {
+        font-size: 12px;
+    }
+}
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 390px;
+    align-items: center;
+}
+.radio-group.readonly {
+    pointer-events: none;
+}
+@media (max-width: 667px) {
+    .radio-group {
+        width: auto;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+}
+.hoverable {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.hoverable:hover {
+    opacity: 0.7;
+}
+.question__item {
+    border-top: 1px solid #e5e5e5;
+    padding: 24px 25px;
+    display: flex;
+    justify-content: space-between;
+    zoom: 1;
+}
+.question__item:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+.question__item:after,
+.question__item:before {
+    content: "";
+    display: table;
+}
+.question__item:after {
+    clear: both;
+}
+.question__item .question__item__label {
+    width: 430px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: "Lava Pro", serif;
+    color: #4c4c4c;
+    hyphens: auto;
+}
+@media (max-width: 667px) {
+    .question__item {
+        padding: 15px 5px;
+        flex-direction: column;
+    }
+    .question__item .question__item__label {
+        width: auto;
+    }
+}
+.intro {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: #fff;
+}
+.intro h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 auto;
+    width: 600px;
+    color: #fff;
+}
+.intro .description {
+    font-family: "Lava 1", "Lava 3", "Lava Pro", serif;
+    font-size: 25px;
+    line-height: 35px;
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.intro .credit {
+    font-family: "Lava 1", "Lava 3", "Lava Pro", serif;
+    width: 725px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 35px;
+}
+.intro .credit a {
+    margin-right: 0px;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.intro .credit .comma {
+    margin-right: 5px;
+}
+.intro .credit em {
+    font-style: italic;
+    margin-right: 5px;
+}
+.intro .wrap {
+    width: 620px;
+    padding: 50px 70px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+.intro .wrap p {
+    width: 620px;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    color: #4c4c4c;
+}
+.intro .wrap p span {
+    cursor: pointer;
+}
+.intro .wrap p:last-child {
+    margin-bottom: 0px;
+}
+.intro .wrap button {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 17px;
+    width: 225px;
+    height: 53px;
+    margin-top: 35px;
+    color: #1a1a1a;
+    border: 3px solid #1a1a1a;
+    font-weight: bold;
+}
+.intro .wrap .compass-wrap {
+    width: 100%;
+}
+.intro .wrap .compass-wrap .compass {
+    margin: 0 auto;
+    margin-top: 59px;
+}
+@media (max-width: 667px) {
+    .intro {
+        padding-top: 20px;
+    }
+    .intro h1 {
+        font-size: 27px;
+        line-height: 28px;
+        font-weight: bold;
+        padding: 0px 15px;
+        width: auto;
+    }
+    .intro .description {
+        width: auto;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: "Lava 3", "Lava Pro", serif;
+        margin-top: 15px;
+        padding: 0px 15px;
+    }
+    .intro .credit {
+        width: auto;
+        font-size: 12px;
+        line-height: 25px;
+        padding: 0px 15px;
+    }
+    .intro p {
+        width: auto;
+    }
+    .intro .wrap {
+        width: auto;
+        padding: 30px 0px;
+        margin-top: 30px;
+    }
+    .intro .wrap p.lead {
+        padding: 0px 15px;
+        font-size: 16px;
+        line-height: 20px;
+        hyphens: auto;
+    }
+    .intro .wrap p.lead span {
+        cursor: pointer;
+    }
+    .intro .wrap button {
+        width: 180px;
+        height: 50px;
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: bold;
+        margin-top: 35px;
+    }
+}
+.hoverable {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.hoverable:hover {
+    opacity: 0.7;
+}
+.party-wrap {
+    position: absolute;
+    top: 130px;
+    width: 660px;
+    left: 50%;
+    margin-left: -330px;
+    z-index: 15;
+}
+.party-wrap .spacer {
+    width: 100%;
+    height: 80px;
+}
+.party-wrap .party {
+    padding: 50px;
+    padding-top: 45px;
+    background: #fff;
+}
+.party-wrap .party h2 {
+    font-size: 25px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.party-wrap .party img {
+    margin-top: 10px;
+}
+.party-wrap .party p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: "Lava 3", "Lava Pro", serif;
+    color: #4c4c4c;
+}
+.party-wrap .party button.close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -45px;
+    top: 0px;
+    z-index: 30;
+    border: none;
+    color: #fff;
+    margin: 0;
+    font-size: 50px;
+    padding: 0px;
+    background: none;
+}
+.party-wrap .party button.close i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzQxMENGODNFNjgzMTFFNkFBQkZFRjAyMTExNjI4MTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzQxMENGODRFNjgzMTFFNkFBQkZFRjAyMTExNjI4MTAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozNDEwQ0Y4MUU2ODMxMUU2QUFCRkVGMDIxMTE2MjgxMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozNDEwQ0Y4MkU2ODMxMUU2QUFCRkVGMDIxMTE2MjgxMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pjoq/EsAAACKSURBVHjavJZLCsAgDAU9oafyWr1V92mzKIhF/OWNILhxRlGfSWZ2vT0nYXO+e77BrRL++CphlxstHPKihNOcU+Hy/F3h9kJXJx4fwSwg7HKNQOHPpgeUBUILVidPLShSUSV0kbeiFjE7w84Mu43YO8MSBMtGLPWx/wz7qbEaBKuu0LqRrIgfAQYA4MMaVyvfbeAAAAAASUVORK5CYII=") no-repeat;
+}
+@media (max-width: 667px) {
+    .party-wrap {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    .party-wrap .spacer {
+        display: none;
+    }
+    .party-wrap .party {
+        padding: 0px 15px;
+        padding-top: 75px;
+        padding-bottom: 45px;
+    }
+    .party-wrap .party img {
+        width: 100%;
+    }
+    .party-wrap .party button.close {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+        background: #1a1a1a;
+        width: 100%;
+        z-index: 10;
+    }
+    .party-wrap .party i {
+        position: absolute;
+        right: 15px;
+        top: 11px;
+    }
+}
+.hoverable {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.hoverable:hover {
+    opacity: 0.7;
+}
+.questions {
+    width: 900px;
+    padding: 30px;
+    background: #fff;
+    margin: 0 auto;
+}
+.questions .pagination {
+    width: 200px;
+    height: 25px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15px;
+    color: #1a1a1a;
+}
+.questions .pagination hr {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: #999;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.questions .pagination .label {
+    width: 77px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #fff;
+    color: #1a1a1a;
+    font-family: "Lava 3", "Lava Pro", serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.questions h2 {
+    margin-top: 10px !important;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.questions ul {
+    margin-top: 40px;
+}
+.questions button {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    width: 179px;
+    height: 50px;
+    color: #1a1a1a;
+    border: 3px solid #1a1a1a;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    display: block;
+}
+.questions button.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+@media (max-width: 667px) {
+    .questions {
+        padding: 30px 10px;
+        width: auto;
+    }
+    .questions .pagination {
+        margin-top: 0px;
+    }
+    .questions h2 {
+        font-size: 19px;
+        margin-top: 15px;
+    }
+    .questions ul {
+        margin-top: 30px;
+    }
+}
+.hoverable {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.hoverable:hover {
+    opacity: 0.7;
+}
+.results .compass-debug button {
+    margin: 0 auto !important;
+    margin-top: 50px !important;
+}
+.results .result {
+    background: #fff;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.results .result p {
+    font-family: "Lava 3", "Lava Pro", serif;
+    font-size: 17px;
+    line-height: 26px;
+    font-style: italic;
+    color: #4c4c4c;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
+.results .result .compass {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.results .result button {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    width: 228px;
+    height: 50px;
+    color: #000;
+    border: 3px solid #000;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    display: block;
+}
+.results .share {
+    width: 960px;
+    margin: 0 auto;
+    background: #fff;
+}
+.results .share img {
+    width: 560px;
+    padding: 30px;
+    background: #aac8c8;
+    display: block;
+    margin: 0 auto;
+}
+.results .share header {
+    width: 395px;
+    margin: 0 auto;
+    padding: 22px 0px;
+    padding-bottom: 40px;
+}
+.results .share header hr {
+    width: 100%;
+    height: 1px;
+    background: #b5b5b5;
+    border: none;
+    position: relative;
+    top: 24px;
+}
+.results .share header h1 {
+    font-family: "Lava 3", "Lava Pro", serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    background: #fff;
+    padding: 0px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    margin: 0;
+}
+.results .share .share-buttons {
+    margin: 0 auto;
+    width: 220px;
+    text-align: center;
+}
+.results .share .share-buttons p {
+    font-family: 'Formular', sans-serif;
+    margin-top: 30px;
+    font-size: 13px;
+    width: auto;
+    color: #666;
+}
+.results .share .share-buttons ul {
+    width: 100%;
+    margin-top: 10px;
+}
+.results .share .share-buttons ul li {
+    display: inline-block;
+    height: 35px;
+    width: 50px;
+    border-right: 1px solid #9ea5a7;
+}
+.results .share .share-buttons ul li:last-child {
+    border: none;
+}
+.results .share .share-buttons ul button {
+    border-bottom: 0;
+    border-right: 1px solid #e5e5e5;
+    color: #222;
+    display: block;
+    font: 13px/1 "Formular", sans-serif;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    background: none;
+    border: none;
+}
+.results .share .share-buttons ul button:hover:before {
+    background-image: none, url("//cdn-s-assets.arzamas.academy/assets/svg/i-social-hover.svg");
+}
+.results .share .share-buttons ul button:before {
+    background-image: url("//cdn-s-assets.arzamas.academy/assets/svg/i-social-dark.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 18px;
+    left: 50%;
+    margin: -10px 0 0 -9px;
+    position: absolute;
+    top: 50%;
+    width: 18px;
+}
+.results .share .share-buttons ul button.vk:before {
+    background-position: 0 -18px;
+}
+.results .share .share-buttons ul button.fb:before {
+    background-position: 0 0px;
+}
+.results .share .share-buttons ul button.ok:before {
+    background-position: 0 -54px;
+}
+.results .share .share-buttons ul button.twi:before {
+    background-position: 0 -36px;
+}
+.results .answers {
+    width: 960px;
+    margin: 0 auto;
+    background: #e0eaec;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.results .answers hr {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin-top: 30px;
+    border: none;
+}
+.results .answers p {
+    text-align: center;
+    margin: 0 auto;
+    color: #1a1a1a;
+    font-family: "Formular", sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    width: 600px;
+}
+.results .answers p svg#dot {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: -1px;
+    margin: 0 1px;
+}
+.results .answers p svg#circle {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+    margin: 0 1px;
+}
+.results .answers ul.questions-items {
+    padding: 0 30px;
+}
+.results .answers ul.questions-items li {
+    border-color: #ccc;
+}
+.results .answers ul.questions-items li:first-child {
+    border-top: none;
+    margin-top: -4px;
+}
+.results .answers ul.questions-items li:last-child {
+    border-bottom: none;
+}
+.results .answers ul.parties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 35px;
+}
+.results .answers ul.parties li button {
+    font-family: "Lava 1", "Lava 3", "Lava Pro", serif;
+    font-size: 15px;
+    color: #000;
+    background: none;
+    border: none;
+    padding: 4px 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.results .answers ul.parties li button:hover hr {
+    display: none;
+}
+.results .answers ul.parties li button.active {
+    background: #1a1a1a;
+    color: #e0eaec;
+}
+.results .answers ul.parties li button.active hr {
+    display: none;
+}
+.results .answers ul.parties li button hr {
+    background: none;
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: -4px;
+    border: none;
+    border-top: 1px dotted #1a1a1a;
+    height: 0px;
+}
+@media (max-width: 667px) {
+    .results .share {
+        width: auto;
+        padding: 20px 0px;
+    }
+    .results .share header {
+        width: 100%;
+    }
+    .results .share header hr {
+        display: none;
+    }
+    .results .share header h1 {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        position: static;
+        width: 100%;
+        transform: translateX(0);
+        text-align: center;
+    }
+    .results .share > img {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    .results .share .share-buttons p {
+        margin-top: 15px;
+    }
+    .results .result {
+        width: auto;
+    }
+    .results .result p {
+        width: auto;
+        padding: 0px 15px;
+    }
+    .results .answers {
+        width: auto;
+        margin-top: 0px;
+        padding-top: 25px;
+    }
+    .results .answers p {
+        width: auto;
+        padding: 0px 15px;
+        font-size: 16px;
+        line-height: 20px;
+        width: 350px;
+    }
+    .results .answers hr {
+        display: none;
+    }
+    .results .answers .parties-wrap {
+        width: 100%;
+        overflow: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid #636363;
+        border-bottom: 1px solid #636363;
+        margin-top: 20px;
+        max-height: 28px;
+    }
+    .results .answers .parties-wrap ul.parties {
+        margin-top: 0;
+        padding: 0;
+        width: 1280px;
+    }
+    .results .answers .parties-wrap ul.parties li button {
+        padding: 4px 8px;
+    }
+    .results .answers .parties-wrap ul.parties li:first-child {
+        margin-left: 15px;
+    }
+    .results .answers .parties-wrap ul.parties li:last-child {
+        margin-right: 15px;
+    }
+}
+.hoverable {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.hoverable:hover {
+    opacity: 0.7;
+}
+#compass {
+    min-height: 700px;
+    padding-bottom: 90px;
+}
+#compass .only-desktop {
+    display: block;
+}
+#compass .only-mobile {
+    display: none;
+}
+@media (max-width: 667px) {
+    #compass {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #compass .only-desktop {
+        display: none;
+    }
+    #compass .only-mobile {
+        display: block;
+    }
+}
+.section__title {
+    padding: 40px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.section__title span {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.section__title span:hover {
+    opacity: 0.7;
+}
+.section__title span em {
+    margin-right: 5px;
+    font-family: "Lava 3", "Lava Pro", Arial, Helvetica, Geneva, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+.compass-portal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 10;
+}
+.compass-portal .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+}
+@media only screen and (max-width: 667px) {
+    body {
+        min-width: 100%;
+    }
+    .compass-portal {
+        overflow-x: hidden;
+    }
+}
